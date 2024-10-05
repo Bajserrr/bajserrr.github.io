@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    list-style: none;
+    color: lightgrey;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #333;
+    transition:0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #555;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.mb {
+    width: 100%;
+    height: auto;
+}
+
+.kategorie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.kategoria {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:0.3s ease;
+}
+
+.kategoria:hover {
+    transform: scale(1.05);
+}
+
+.kategoria img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.kategoria h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.kategoria p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.produkty {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.produkt {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition:0.3s ease;
+}
+
+.produkt:hover {
+    transform: scale(1.05);
+}
+
+.produkt img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.produkt h4 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.produkt p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition:0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .kategorie, .produkty {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .kategorie, .produkty {
+        grid-template-columns: 1fr;
+    }
+}
